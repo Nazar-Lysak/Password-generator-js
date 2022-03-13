@@ -17,16 +17,8 @@ const optionsArray = [lowerCasePass, upperCasePass, digitPass, symbolPass];
 let generatePassArray = [];
 lengthValue.innerText = lengthPass.value;
 
-function lengthOfPass () {
-    lengthValue.innerText = lengthPass.value;
-}
-
-function generatePass() {
-    outPass.innerText = generatePassArray.join('');
-}
-
 lengthPass.addEventListener('mousemove', () => {
-    lengthOfPass();
+    lengthValue.innerText = lengthPass.value;
 })
 
 function generateProcces() {
@@ -53,7 +45,7 @@ genBtn.addEventListener('click', (e) => {
         outPass.innerText = "select atleast one option";
     } else {
         e.preventDefault();
-        generatePass();
+        outPass.innerText = generatePassArray.join('');
         generateProcces();  
     }  
 })
