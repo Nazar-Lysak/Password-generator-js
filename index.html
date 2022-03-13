@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/bubbles/344/internet.png" type="image/x-icon">
+    <title>Password Generator | JS</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>
+                Password Generator
+            </h1>
+        </header>
+        <main>
+            <div class="main-out_wrapper">
+                <div class="main-out"></div>
+                <div class="main-out_copy"></div>
+            </div>
+            <div class="main-options_item">
+                <input class="range" type="range" min="12" max="26">
+                <p>"Length of password" <span class="range_value">0</span></p>
+            </div>
+            <div class="main_options">
+                <div class="main-options_item">
+                    <input class="lowerCase" type="checkbox">
+                    <p>"Alphabetical lower case"</p>
+                </div>
+                <div class="main-options_item">
+                    <input class="upperCase" type="checkbox">
+                    <p>"Alphabetical upper case"</p>
+                </div>
+                <div class="main-options_item">
+                    <input class="digits" type="checkbox">
+                    <p>"Digits"</p>
+                </div>
+                <div class="main-options_item">
+                    <input class="symbols" type="checkbox">
+                    <p>"Symbols"</p>
+                </div>
+                <button class="generate-btn">Generate</button>
+            </div>    
+        </main>
+        <footer>
+            <h3>
+                Created by NazaReTH | 2022
+            </h2>
+        </footer>
+    </div>  
+
+
+    <script src="script.js"></script>
+</body>
+</html>
